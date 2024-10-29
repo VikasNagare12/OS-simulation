@@ -1,0 +1,10 @@
+JAVA_OPTS="-Xms14g -Xmx14g \
+           -XX:+UseZGC \
+           -XX:ZCollectionInterval=20 \
+           -XX:ZAllocationSpikeTolerance=1.5 \
+           -XX:+UseLargePages \
+           -XX:+UseCompressedOops \
+           -XX:+AlwaysPreTouch \
+           -XX:MaxGCPauseMillis=10 \
+           -XX:+HeapDumpOnOutOfMemoryError \
+           -XX:HeapDumpPath=/path/to/heapdump.hprof"
